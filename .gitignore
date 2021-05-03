@@ -5,3 +5,5 @@
 Archive/
 data/
 *.xml
+.Rproj.user
+.Rhistory
