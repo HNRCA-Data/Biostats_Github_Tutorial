@@ -1,8 +1,50 @@
+# HNRCA BDMU GitHub Tutorial
+
+This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing
+existing projects as that is expected to be a common workflow. However, initalizing a git repository at the onset of a project 
+is the recommended workflow. That is not the focus here as initialzing an empty directory is a simplified version of initializing
+a directory with existing files.
+
+1. Prerequistes 
+    - Create a [GitHub](github.com) account and request access to HNRCA-Data
+    - Download and install [git](https://git-scm.com/download/win)
+    - (Optional) Install [GitHub Desktop](https://desktop.github.com/)
+2. Initialize the project directory
+3. Ignore datasets and sensitive information (we are not storing data on GitHub at this time)
+4. Create the GitHub repository
+5. Perform initial commit
+6. Commit and push changes as you work
+
+
+## Initalize Repository
+
+#### Git Bash
+- Navigate to the project directory in the file explorer
+- Right click and select 'Git Bash Here'
+- Run the command `git init`
+
+#### Git GUI
+- Navigate to the project directory in the file explorer
+- Right click and select 'Git GUI Here'
+- Click 'Create new Repository'
+- Select your directory and 'click Create'
+
+#### GitHub Desktop
+GitHub Desktop is designed to initialize repositories in empty directories and therefore it is not recommended to use
+this application for initialization. If you would like to do so, it is critical that you create a git ignore file first
+and ensure that you don't overwrite the git ignore file during initialization.
+
+
+## Create git ignore file
+
+In your favorite text editor, open a new file and save it in your project directory as '.gitignore'
+
 ## --Git Bash Steps--
 
-Start by creating a git ignore file. This will define which files shouldn't Navigate to project directory in file explorer. 
-Create a new file called '.gitignore' and open in a text editor. You'll want to include the name of any file containing
-sensitive info (ie API keys) or data. At this time repos should only contain code and other relevant files.
+Start by creating a git ignore file. This will define which files shouldn't be uploaded to GitHub. 
+Navigate to project directory in file explorer. Create a new file called '.gitignore' and open in a text editor. 
+You'll want to include the name of any file containing sensitive info (ie API keys) or data. At this time 
+repos should only contain code and other relevant files.
 - Add all files that should not be uploaded to github
 - Archive/ will ignore all 'Archive' directories recursively
 - *.csv will ignore all csv files
