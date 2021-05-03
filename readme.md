@@ -1,28 +1,29 @@
 ##--Git Bash Steps--
 
-Download git https://git-scm.com/download/win
-Installing with the default options will be sufficient
-Navigate to project directory in file explorer. 
-Create a new file called '.gitignore' and open in a text editor
--Add all files that should not be uploaded to github (only upload code for now, ignore data and sensitive info)
--Archive/ will ignore all 'Archive' directories recursively
--*.csv will ignore all csv files
--https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns
-	
-Right click and select 'Git Bash Here'. Then use the following commands to initalize the repository and
+Start by creating a git ignore file. This will define which files shouldn't Navigate to project directory in file explorer. 
+Create a new file called '.gitignore' and open in a text editor. You'll want to include the name of any file containing
+sensitive info (ie API keys) or data. At this time repos should only contain code and other relevant files.
+- Add all files that should not be uploaded to github
+- Archive/ will ignore all 'Archive' directories recursively
+- *.csv will ignore all csv files
+- [More git ignore patterns](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns)
+
+Download git [here](https://git-scm.com/download/win) and install with the default options. Then right click 
+in the project directory and select 'Git Bash Here' and use the following commands to initalize the repository and
 perform you inital commit.
 ```
-$ git init
-$ git add .
-$ git commit -m "Commit message"
+git init
+git add .
+git commit -m "Initial commit"
 ```
-Go to github.com, create an account if you haven't already.
+Next go to [github.com](github.com), create an account if you haven't already.
 Click the top right icon, select 'Your Organizations', Click 'HNRCA-Data'
 Click the 'New' button on the right to create your repository. Name the repo and be sure to keep it private
 Copy the repo url. Eg https://github.com/HNRCA-Data/test.git
-	$ git remote add origin https://github.com/HNRCA-Data/test.git
-	$ git push origin master
-	
+```
+git remote add origin https://github.com/HNRCA-Data/test.git
+git push origin master
+```
 Now that he repo is setup, simply commit and push new changes as you make them
 This can be done via the terminal or GUIs provided by git, RStudio, or GitHub
 
