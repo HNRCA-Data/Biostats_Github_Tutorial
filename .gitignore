@@ -1,0 +1,7 @@
+*.csv
+*.xls
+*.xlsx
+*.RDS
+Archive/
+data/
+*.xml
