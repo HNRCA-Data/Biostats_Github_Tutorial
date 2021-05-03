@@ -38,7 +38,7 @@ The git ignore file is a simple text file that tells git which files should not 
 - Specific files can be ignored by adding the name of the file, including the file extension
 - To ignore all files of a specific type, use the syntax '\*.\<extension\>'. Eg '\*.csv' will ignore all csv files
 - To ignore entire folders, use the syntax '/\<folder\>' 
-- To ignore folders recursively, use the syntax '\<folder/\>'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
+- To ignore folders recursively, use the syntax '\<folder\>/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
 
 For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
 
@@ -56,7 +56,7 @@ After the remote repo has been created, you need point your local repo to the re
 ### Git Bash
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git Bash Here'
-- Run `git remote add` command with the name of the remote and it's url. Eg ` git remote add origin https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git`
+- Run a `git remote add` command with the name of the remote and it's url. Eg ` git remote add origin https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git`
 
 ### Git GUI
 - Navigate to the project directory in the file explorer
@@ -96,7 +96,6 @@ RStudio also has a git GUI which can be quite convenient when working in R. To a
 - Write a commit message, then click 'Commit'
 - Click the push button above the commit pane to send those changes to GitHub
 
-
 ### GitHub Desktop
 #### Disclaimer
 GitHub has written a very clean, useable, and comprehensive GUI for git that is excellent for maintaining existing git repositories. However, it is designed to initialize new repositories with an empty project directory and this causes issues that may result in files being overwritten or deleted. If using GitHub Deskop to initalize rather than maintain a repository, exercise caution. Most importantly, **one should create a .gitignore file before initializing a repository with GitHub Desktop and ensure that the .gitignore isn't overwritten during initialization.**
@@ -114,3 +113,8 @@ Once the repository is added it is quite similar to the other GUIs, however it i
 - Add a brief commit message in the summary box, with an optional detailed message in the description box
 - Click 'Commit to \<branch\>
 - Push the changes to GitHub via the push button at the top right
+
+
+## Helpful Resources
+[A quick list of common git bash commands](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
+[git bash initialization walkthrough](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
