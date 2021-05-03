@@ -6,12 +6,25 @@ This tutorial will provide an introduction to using GitHub within the HNRCA-Data
     - Create a [GitHub](github.com) account and request access to HNRCA-Data
     - Download and install [git](https://git-scm.com/download/win)
     - (Optional) Install [GitHub Desktop](https://desktop.github.com/)
-2. Initialize the project directory
-3. Ignore datasets and sensitive information (we are not storing data on GitHub at this time)
+2. Create a git ignore file
+3. Initialize the project directory
 4. Create the GitHub repository and link to local repository
 5. Commit and push changes as you work
 
 Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUI, as well as GUIs provided by GitHub and Rstudio. Relevant instructions for each of these will be included in each step. The recommended workflow would be to initialize the repository with the git terminal or GUI, then maintain your repository with the Rstudio or GitHub GUI.
+
+
+## Create a git ignore file
+The git ignore file is a simple text file that tells git which files should not be uploaded to the online repository. This should include all datasets and any sensitive information, or any other local files which are not pertinent to the project.
+
+- In your favorite text editor, open a new file and save it in your project directory as '.gitignore'
+- List items to be ignored, one per line
+- Specific files can be ignored by adding the name of the file, including the file extension
+- To ignore all files of a specific type, use the syntax '\*.\<extension\>'. Eg '\*.csv' will ignore all csv files
+- To ignore entire folders, use the syntax '/\<folder\>' 
+- To ignore folders recursively, use the syntax '\<folder\>/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
+
+For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
 
 
 ## Initalize Repository
@@ -27,26 +40,22 @@ Note that there are several ways to interface with git. The ones that will be co
 - Select your directory and 'click Create'
 
 ### GitHub Desktop
-GitHub Desktop is designed to initialize repositories in empty directories and therefore it is not recommended to use this application for initialization. If you would like to do so, it is critical that you create a git ignore file first and ensure that you don't overwrite the git ignore file during initialization.
+While GitHub Desktop is an excellent git interface for maintaining repositories, its behavior makes it unsuitable for initalizing repositories in non-empty directories. It can be done, however the application is clearly designed to initialize repos in empty directories. Initializing a repo in a non-empty directory could result in data loss. If you would like to use this application for this purpose, it is critical that you ***create a .gitignore file before initializing and ensure that the .gitignore isn't overwritten during initialization.*** 
 
-
-## Create git ignore file
-The git ignore file is a simple text file that tells git which files should not be uploaded to the online repository. This should include all datasets and any sensitive information, or any other local files which are not pertinent to the project.
-
-- In your favorite text editor, open a new file and save it in your project directory as '.gitignore'
-- List items to be ignored, one per line
-- Specific files can be ignored by adding the name of the file, including the file extension
-- To ignore all files of a specific type, use the syntax '\*.\<extension\>'. Eg '\*.csv' will ignore all csv files
-- To ignore entire folders, use the syntax '/\<folder\>' 
-- To ignore folders recursively, use the syntax '\<folder\>/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
-
-For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
+Another work-around would be to initialize a new, empty directory, then copy your files into the new directory.
+- After installing GitHub Desktop, click 'Create new repository'
+    - If you have existing projects in GitHub Desktop already:
+        - Click the down arrow at the top left under 'Current repository', click 'Add', then 'Create new repository'
+- Enter the name of the new directory to be created
+- Under 'Local path', choose the parent directory you would like the new directory in
+- Fill out the other options if desired and click 'Create repository'
+- Copy your files into the new directory
 
 
 ## Create and Sync GitHub Repository
 The GitHub is the online or 'remote' place where your project will be stored and tracked. To create the repo, use the following steps:
 
-- Go to [github.com](github.com) and create an account if you haven't already. 
+- Go to [github.com](github.com). If using GitHub Desktop, skip this step.
 - Click the top right icon and select 'Your Organizations', then 'HNRCA-Data'. 
 - Click the 'New' button on the right to create your repository. 
 - Name the repo and select 'Private'. Do not use the options to initialize with a readme or .gitignore unless you are starting with an empty project directory.
@@ -65,6 +74,14 @@ After the remote repo has been created, you need point your local repo to the re
 - Enter the remote name, eg 'origin'
 - Enter the remote location, eg 'https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git'
 - Click 'Add'
+
+### GitHub Desktop
+- If using GitHub Desktop to initialize the repository, you can skip creating a repository on github.com. If you've already done so, you must follow the Git Bash or Git GUI instructions above.
+- Select the new repository from the 'Current repository' drop down at the top left, then click 'Publish repository'
+- You can choose a name other than the folder name if desired
+- Be sure to select the 'Keep this code private' option
+- Select HNRCA-Data under 'Organization'
+- Click 'Publish repository'
 
 
 ## Commit and Push Changes
@@ -88,7 +105,7 @@ Now that your project directory is connected to GitHub, all you need to do is co
 - Click push to send those changes to GitHub
 
 ### RStudio Git GUI
-RStudio also has a git GUI which can be quite convenient when working in R. To access the git interface, you must A) be working within an R project and B) have already initialized the directory. If you just initialized the repository, close and reopen the project in R. Once these steps are done you will see a git icon appear just to the right of the 'Go to file/function' search bar. The GUI is similar to the native git GUI but a bit more polished and has a few extra options. The main drawback of the Rstudio GUI compared to the native GUI is that it tends to be slow when previewing and staging files. 
+RStudio also has a git GUI which can be quite convenient when working in R. To access the git interface, you must A) be working within an R project and B) have already initialized the directory. If you just initialized the repository, close and reopen the project in R. Once these steps are done you will see a git icon appear just to the right of the 'Go to file/function' search bar. The GUI is similar to the native git GUI but a bit more polished and has a few extra options. The main drawback of the Rstudio GUI compared to the native GUI is that it tends to be slow when previewing and staging files. Additionally, this interface has no management features (intializing, adding/removing remote repositories, etc).
 - Click the git icon then click 'Commit' (or ctrl-alt-M)
 - You can review the changes in files by clicking on them
 - To stage files individually, check the box in the 'Staged' column next to the filename
@@ -97,9 +114,6 @@ RStudio also has a git GUI which can be quite convenient when working in R. To a
 - Click the push button above the commit pane to send those changes to GitHub
 
 ### GitHub Desktop
-#### Disclaimer
-GitHub has written a very clean, useable, and comprehensive GUI for git that is excellent for maintaining existing git repositories. However, it is designed to initialize new repositories with an empty project directory and this causes issues that may result in files being overwritten or deleted. If using GitHub Deskop to initalize rather than maintain a repository, exercise caution. Most importantly, **one should create a .gitignore file before initializing a repository with GitHub Desktop and ensure that the .gitignore isn't overwritten during initialization.**
-
 To begin using GitHub Desktop, you'll first need to add your repository.
 - Click 'Add existing repository' 
     - If you have existing projects in GitHub Desktop already:
