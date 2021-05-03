@@ -118,4 +118,4 @@ Once the repository is added it is quite similar to the other GUIs, however it i
 ## Helpful Resources
 [A quick list of common git bash commands](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
-[git bash initialization walkthrough](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
+[Git bash initialization walkthrough](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
