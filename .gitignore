@@ -1,9 +1,15 @@
+# Ignore all files of the following types
 *.csv
 *.xls
 *.xlsx
 *.RDS
+*.xml
+
+# Ignore entire directories
 Archive/
 data/
-*.xml
+
+# Ignore specific files
 .Rproj.user
 .Rhistory
+scratch.R
