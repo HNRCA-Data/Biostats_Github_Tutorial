@@ -37,7 +37,17 @@ and ensure that you don't overwrite the git ignore file during initialization.
 
 ## Create git ignore file
 
-In your favorite text editor, open a new file and save it in your project directory as '.gitignore'
+The git ignore file is a simple text file that tells git which files should not be uploaded to the online repository.
+This should include all datasets and any sensitive information, or any other local files which are not pertinent to the project.
+
+- In your favorite text editor, open a new file and save it in your project directory as '.gitignore'
+- List items to be ignored, one per line
+- Specific files can be ignored by adding the name of the file, including the file extension
+- To ignore all files of a specific type, use the syntax '\*.extension'. Eg '\*.csv' will ignore all csv files
+- To ignore entire folders, use the syntax '/folder' 
+- To ignore folders recursively, use the syntax 'folder/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
+
+For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
 
 ## --Git Bash Steps--
 
