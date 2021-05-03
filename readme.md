@@ -15,18 +15,18 @@ Note that there are several ways to interface with git. The ones that will be co
 
 
 ## Initalize Repository
-#### Git Bash
+### Git Bash
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git Bash Here'
 - Run the command `git init`
 
-#### Git GUI
+### Git GUI
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git GUI Here'
 - Click 'Create new Repository'
 - Select your directory and 'click Create'
 
-#### GitHub Desktop
+### GitHub Desktop
 GitHub Desktop is designed to initialize repositories in empty directories and therefore it is not recommended to use this application for initialization. If you would like to do so, it is critical that you create a git ignore file first and ensure that you don't overwrite the git ignore file during initialization.
 
 
@@ -53,12 +53,12 @@ The GitHub is the online or 'remote' place where your project will be stored and
 - Copy the repo url. Eg https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git
 
 After the remote repo has been created, you need point your local repo to the remote in order to keep them synced.
-#### Git Bash
+### Git Bash
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git Bash Here'
 - Run `git remote add` command with the name of the remote and it's url. Eg ` git remote add origin https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git`
 
-#### Git GUI
+### Git GUI
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git GUI Here'
 - Select the 'Remote' menu at the top then click 'Add'
@@ -70,7 +70,7 @@ After the remote repo has been created, you need point your local repo to the re
 ## Commit and Push Changes
 Now that your project directory is connected to GitHub, all you need to do is commit the changes and push them to GitHub as you work. A 'commit' is equivalent to saving your work on git, and each of these save points will act as an 'undo' point that you can roll back to in the future. The term 'push' refers to sending those commits to your remote repository on GitHub.
 
-#### Git Bash
+### Git Bash
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git Bash Here'
 - To add all new or changed files to your commit run `git add .`
@@ -78,28 +78,28 @@ Now that your project directory is connected to GitHub, all you need to do is co
 - Finalize the commit by running a commit command including a commit message. Eg `git commit -m "Initial commit"`
 - To send those changes to GitHub run a push command with the remote name and branch name. Eg `git push origin main`
 
-#### Git GUI
+### Git GUI
 - Navigate to the project directory in the file explorer
 - Right click and select 'Git GUI Here'
 - If the GUI was already open, click 'Rescan' to make sure the changes are up-to-date
 - You can review your changes by clicking on a file in the left-hand pane
-- To add all files, click 'Stage Changed'. Or add individually by clicking the file then pressing ctrl-T
+- To add all files to the commit, click 'Stage Changed'. Or add individually by clicking the file then pressing ctrl-T
 - Write a commit message, then click 'Commit'
 - Click push to send those changes to GitHub
 
-#### RStudio Git GUI
-RStudio also has a get GUI which can be quite convenient when working in R
+### RStudio Git GUI
+RStudio also has a git GUI which can be quite convenient when working in R. To access the git interface, you must A) be working within an R project and B) have already initialized the directory. If you just initialized the repository, close and reopen the project in R. Once these steps are done you will see a git icon appear just to the right of the 'Go to file/function' search bar. The GUI is similar to the native git GUI but a bit more polished and has a few extra options. The main drawback of the Rstudio GUI compared to the native GUI is that it tends to be slow when previewing and staging files. 
+- Click the git icon then click 'Commit' (or ctrl-alt-M)
+- You can review the changes in files by clicking on them
+- To stage files individually, check the box in the 'Staged' column next to the filename
+- To stage all files, click the 'Stage All' button between the file and preview panes
+- Write a commit message, then click 'Commit'
+- Click the push button above the commit pane to send those changes to GitHub
 
 
-## --GitHub Desktop Steps--
-### Disclaimer
-GitHub has written a very clean, useable, and comprehensive GUI for git that is excellent for
-maintaining existing git repositories. However it is designed to initialize new repositories 
-with an empty project directory and this causes issues that may result in files being 
-overwritten or deleted. If using GitHub Deskop to initalize rather than maintain a repository,
-exercise caution.
-One issue is that GitHub Desktop will automatically commit all existing files immediately when
-initializing a repo, therefore one should create a .gitignore file **before** initializing.
+### GitHub Desktop
+#### Disclaimer
+GitHub has written a very clean, useable, and comprehensive GUI for git that is excellent for maintaining existing git repositories. However, it is designed to initialize new repositories with an empty project directory and this causes issues that may result in files being overwritten or deleted. If using GitHub Deskop to initalize rather than maintain a repository, exercise caution. Most importantly, **one should create a .gitignore file before initializing a repository with GitHub Desktop.**
 
 #### GitHub Desktop
 To begin using GitHub Desktop, you'll first need to add the local repository.
