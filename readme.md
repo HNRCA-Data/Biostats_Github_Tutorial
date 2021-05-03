@@ -49,6 +49,12 @@ This should include all datasets and any sensitive information, or any other loc
 
 For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
 
+## Create GitHub Repository
+
+Go to [github.com](github.com) and create an account if you haven't already. Next, click the top right icon and
+select 'Your Organizations', then 'HNRCA-Data'. Click the 'New' button on the right to create your repository. 
+Name the repo and be sure to keep it private. Then copy the repo url. Eg https://github.com/HNRCA-Data/Biostats_Github_Tutorial.git
+
 ## --Git Bash Steps--
 
 Start by creating a git ignore file. This will define which files shouldn't be uploaded to GitHub. 
@@ -68,10 +74,7 @@ git init
 git add .
 git commit -m "Initial commit"
 ```
-Next go to [github.com](github.com), create an account if you haven't already.
-Click the top right icon, select 'Your Organizations', Click 'HNRCA-Data'
-Click the 'New' button on the right to create your repository. Name the repo and be sure to keep it private
-Copy the repo url. Eg https://github.com/HNRCA-Data/test.git
+
 ```
 git remote add origin https://github.com/HNRCA-Data/test.git
 git push origin master
