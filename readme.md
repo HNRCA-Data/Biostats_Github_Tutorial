@@ -40,6 +40,7 @@ exercise caution.
 One issue is that GitHub Desktop will automatically commit all existing files immediately when
 initializing a repo, therefore one should create a .gitignore file **before** initializing.
 
+
 Start by creating a git ignore file. This will define which files shouldn't Navigate to project directory in file explorer. 
 Create a new file called '.gitignore' and open in a text editor. You'll want to include the name of any file containing
 sensitive info (ie API keys) or data. At this time repos should only contain code and other relevant files.
@@ -48,9 +49,8 @@ sensitive info (ie API keys) or data. At this time repos should only contain cod
 - *.csv will ignore all csv files
 - [More git ignore patterns](https://www.atlassian.com/git/tutorials/saving-changes/gitignore#git-ignore-patterns)
 
-Download from https://desktop.github.com/
-Install and open GitHub Desktop, create an account if needed. Click 'Add existing repository'.
-If you have existing projects in GitHub Desktop already, click the down arrow at the top left under
+Download GitHub Desktop [here](https://desktop.github.com/). Install and run the program, then create an account if needed or login. 
+Click 'Add existing repository'. If you have existing projects in GitHub Desktop already, click the down arrow at the top left under
 'Current repository', click Add, then Add existing repository'. After adding your local project
 path, GitHub Desktop will detect that there is no existing repository at that location. 
 Click 'create a repository', add a description if desired, then click 'Create repository'.
