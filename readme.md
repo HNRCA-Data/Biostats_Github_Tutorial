@@ -2,16 +2,20 @@
 
 This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex of the processes.
 
-1. Prerequistes 
-    - Create a [GitHub](github.com) account and request access to HNRCA-Data
-    - Download and install [git](https://git-scm.com/download/win)
-    - (Optional) Install [GitHub Desktop](https://desktop.github.com/)
+1. Prerequistes - accounts and software
 2. Create a git ignore file
 3. Initialize the project directory
 4. Create the GitHub repository and link to local repository
 5. Commit and push changes as you work
 
 Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUIs provided by git, GitHub, and Rstudio. Relevant instructions for each of these will be included in each step. The recommended workflow would be to initialize the repository with the git terminal or GUI, then maintain your repository with the Rstudio or GitHub GUI.
+
+
+## Prerequistes
+- Create a [GitHub](github.com) account
+- Request access to the HNRCA-Data organization by contacting Greg Matuszek and providing your GitHub username
+- Download and install [git](https://git-scm.com/download/win). The default install options are sufficient.
+- (Optional) Install [GitHub Desktop](https://desktop.github.com/). The default install options are sufficient.
 
 
 ## Create a git ignore file
