@@ -2,7 +2,7 @@
 
 This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex of the processes.
 
-1. Prerequistes - accounts and software
+1. Prerequistes - setup accounts and software
 2. Create a git ignore file
 3. Initialize the project directory
 4. Create the GitHub repository and link to local repository
