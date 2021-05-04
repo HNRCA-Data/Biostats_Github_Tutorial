@@ -21,10 +21,10 @@ The git ignore file is a simple text file that tells git which files should not 
 - List items to be ignored, one per line
 - Specific files can be ignored by adding the name of the file, including the file extension
 - To ignore all files of a specific type, use the syntax '\*.\<extension\>'. Eg '\*.csv' will ignore all csv files
-- To ignore entire folders, use the syntax '/\<folder\>' 
+- To ignore entire folders, use the syntax '/\<folder\>'. Eg '/Archive' will ignore the 'Archive' folder in the root directory and '/data/Archive' will ignore the 'Archive' folder in the data directory. 
 - To ignore folders recursively, use the syntax '\<folder\>/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
 
-For examples or information see the .gitignore file in this repository or see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
+For examples see the .gitignore file in this repository or for more information see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
 
 
 ## Initalize Repository
