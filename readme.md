@@ -1,6 +1,6 @@
 # HNRCA BDMU GitHub Tutorial
 
-This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex process that requires more care.
+This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex of the processes.
 
 1. Prerequistes 
     - Create a [GitHub](github.com) account and request access to HNRCA-Data
