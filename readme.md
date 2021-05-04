@@ -114,6 +114,8 @@ RStudio also has a git GUI which can be quite convenient when working in R. To a
 - Click the push button above the commit pane to send those changes to GitHub
 
 ### GitHub Desktop
+GitHub Desktop is the most polished git interface. The UI is modern and does not suffer from lag like the Rstudio interface. It also refreshes automatically unlike the other GUIs. The drawback of this GUI is there is no 'ammend to previous commit' option. 
+
 To begin using GitHub Desktop, you'll first need to add your repository.
 - Click 'Add existing repository' 
     - If you have existing projects in GitHub Desktop already:
