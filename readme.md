@@ -1,6 +1,6 @@
 # HNRCA BDMU GitHub Tutorial
 
-This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing existing projects as that is expected to be a common workflow. However, initalizing a git repository at the onset of a project is the recommended workflow. That is not the focus here as initialzing an empty directory is a simplified version of initializing a directory with existing files.
+This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex process that requires more care.
 
 1. Prerequistes 
     - Create a [GitHub](github.com) account and request access to HNRCA-Data
@@ -11,7 +11,7 @@ This tutorial will provide an introduction to using GitHub within the HNRCA-Data
 4. Create the GitHub repository and link to local repository
 5. Commit and push changes as you work
 
-Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUI, as well as GUIs provided by GitHub and Rstudio. Relevant instructions for each of these will be included in each step. The recommended workflow would be to initialize the repository with the git terminal or GUI, then maintain your repository with the Rstudio or GitHub GUI.
+Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUIs provided by git, GitHub, and Rstudio. Relevant instructions for each of these will be included in each step. The recommended workflow would be to initialize the repository with the git terminal or GUI, then maintain your repository with the Rstudio or GitHub GUI.
 
 
 ## Create a git ignore file
