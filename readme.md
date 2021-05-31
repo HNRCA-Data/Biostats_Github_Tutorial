@@ -1,21 +1,49 @@
 # HNRCA BDMU GitHub Tutorial
 
-This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact is still expected to be a common workflow and is the more complex of the processes.
+This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact will be the focus here because it is the more complex of the processes and is likely to be a common workflow.
 
+Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUI, the GitHub Desktop application, and Rstudio git GUI. Relevant instructions for each of these will be included for each step. The recommended workflow is to initialize your repository with the git terminal then maintain your repository with the Rstudio or GitHub GUI. To get started, you'll need to follow these steps:
 1. Prerequistes - setup accounts and software
-2. Create a git ignore file
-3. Initialize the project directory
-4. Create the GitHub repository and link to local repository
-5. Commit and push changes as you work
-
-Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUIs provided by git, GitHub, and Rstudio. Relevant instructions for each of these will be included in each step. The recommended workflow would be to initialize the repository with the git terminal or GUI, then maintain your repository with the Rstudio or GitHub GUI.
+2. Initialize the project directory
+3. Create a git ignore file
+5. Create the GitHub repository and link to local repository
+6. Commit and push changes as you work
 
 
 ## Prerequistes
 - Create a [GitHub](github.com) account
 - Request access to the HNRCA-Data organization by contacting Greg Matuszek and providing your GitHub username
 - Download and install [git](https://git-scm.com/download/win). The default install options are sufficient.
-- (Optional) Install [GitHub Desktop](https://desktop.github.com/). The default install options are sufficient.
+- (Optional) Download and install [GitHub Desktop](https://desktop.github.com/). The default install options are sufficient.
+
+
+## Initalize the Repository
+### Git Bash
+- Navigate to the project directory in the file explorer
+- Right click and select 'Git Bash Here'
+- Run the command `git init`
+
+### Git GUI
+- Navigate to the project directory in the file explorer
+- Right click and select 'Git GUI Here'
+- Click 'Create new Repository'
+- Select your directory and 'click Create'
+
+### GitHub Desktop
+While GitHub Desktop is an excellent git interface and is certainly the most polished of those presented here. However, its behavior makes it unsuitable for initalizing repositories in non-empty directories. It can be done, but this method is not recommended and could result in data loss. Using GitHub Deskop **is** recommended otherwise, but for non-empty directories one of the above methods should be used- at which point you can switch to GitHub Desktop. 
+
+Another work-around would be to initialize a new, empty directory, then copy your files into the new directory.
+- After installing GitHub Desktop, click 'Create new repository'
+    - If you have existing projects in GitHub Desktop already:
+        - Click the down arrow at the top left under 'Current repository', click 'Add', then 'Create new repository'
+- Enter the name of the new directory to be created
+- Under 'Local path', choose the parent directory you would like the new directory in
+- Selecting a default Git ignore file can be useful, but you may still want to make modify it
+- The README option just creates an empty file. It could serve as a reminder if that seems useful to you. 
+- Fill out the other options if desired and click 'Create repository'
+- Copy your files into the new directory
+
+*As a note, if you do in fact attempt to use GitHub Desktop to initialize a non-empty directory it is imperitive that you exercise caution and **create a .gitignore file before initializing, then ensure that the .gitignore isn't overwritten during initialization.***
 
 
 ## Create a git ignore file
@@ -29,31 +57,6 @@ The git ignore file is a simple text file that tells git which files should not 
 - To ignore folders recursively, use the syntax '\<folder\>/'. Eg 'Archive/' will ignore any subdirectory named 'Archive' within the project directory.
 
 For examples see the .gitignore file in this repository or for more information see this detailed [.gitignore tutorial](https://www.atlassian.com/git/tutorials/saving-changes/gitignore) 
-
-
-## Initalize Repository
-### Git Bash
-- Navigate to the project directory in the file explorer
-- Right click and select 'Git Bash Here'
-- Run the command `git init`
-
-### Git GUI
-- Navigate to the project directory in the file explorer
-- Right click and select 'Git GUI Here'
-- Click 'Create new Repository'
-- Select your directory and 'click Create'
-
-### GitHub Desktop
-While GitHub Desktop is an excellent git interface for maintaining repositories, its behavior makes it unsuitable for initalizing repositories in non-empty directories. It can be done, however the application is clearly designed to initialize repos in empty directories. Initializing a repo in a non-empty directory could result in data loss. If you would like to use this application for this purpose, it is critical that you ***create a .gitignore file before initializing and ensure that the .gitignore isn't overwritten during initialization.*** 
-
-Another work-around would be to initialize a new, empty directory, then copy your files into the new directory.
-- After installing GitHub Desktop, click 'Create new repository'
-    - If you have existing projects in GitHub Desktop already:
-        - Click the down arrow at the top left under 'Current repository', click 'Add', then 'Create new repository'
-- Enter the name of the new directory to be created
-- Under 'Local path', choose the parent directory you would like the new directory in
-- Fill out the other options if desired and click 'Create repository'
-- Copy your files into the new directory
 
 
 ## Create and Sync GitHub Repository
