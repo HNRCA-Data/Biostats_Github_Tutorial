@@ -3,7 +3,7 @@
 *.xls
 *.xlsx
 *.RDS
-*.xmlghjhg
+*.xml
 
 # Ignore entire directories
 Archive/
