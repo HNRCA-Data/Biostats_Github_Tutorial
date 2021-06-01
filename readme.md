@@ -62,9 +62,10 @@ For examples see the .gitignore file in this repository or for more information 
 
 
 ## Create and Sync GitHub Repository
-The GitHub is the online or 'remote' place where your project will be stored and tracked. To create the repo, use the following steps:
+The GitHub is the online or 'remote' place where your project will be stored and tracked. If you're using the git bash or GUI, you must create the repo on github.com before being able to sync changes. If you're using GitHub Desktop, you can create the GitHub repo right in the app. 
 
-- Go to [github.com](github.com). If using GitHub Desktop, skip this step.
+To create the repo on github.com, use the following steps:
+- Go to [github.com](github.com)
 - Click the top right icon and select 'Your Organizations', then 'HNRCA-Data'. 
 - Click the 'New' button on the right to create your repository. 
 - Name the repo and select 'Private'. Do not use the options to initialize with a readme or .gitignore unless you are starting with an empty project directory.
