@@ -2,7 +2,9 @@
 
 This tutorial will provide an introduction to using GitHub within the HNRCA-Data organization. The focus will be on intializing projects with existing files. It is recommended to initalize the git repository at the onset of a project before creating any files, however doing so after the fact will be the focus here because it is the more complex of the processes and is likely to be a common workflow.
 
-Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUI, the GitHub Desktop application, and Rstudio git GUI. Relevant instructions for each of these will be included for each step. The recommended workflow is to initialize your repository with the git terminal then maintain your repository with the Rstudio or GitHub GUI. To get started, you'll need to follow these steps:
+Note that there are several ways to interface with git. The ones that will be covered here are the native git bash terminal and GUI, the GitHub Desktop application, and Rstudio git GUI. Relevant instructions for each of these will be included for each step. The recommended workflow is to initialize your repository with the git terminal then maintain your repository with the Rstudio or GitHub GUI.
+
+## Table of Contents
 1. Prerequistes - setup accounts and software
 2. Initialize the project directory
 3. Create a git ignore file
