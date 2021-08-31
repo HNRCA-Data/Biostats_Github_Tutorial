@@ -32,7 +32,7 @@ Note that there are several ways to interface with git. The ones that will be co
 - Select your directory and 'click Create'
 
 ### GitHub Desktop
-While GitHub Desktop is an excellent git interface and is certainly the most polished of those presented here. However, its behavior makes it unsuitable for initalizing repositories in non-empty directories. It can be done, but this method is not recommended and could result in data loss. Using GitHub Deskop **is** recommended otherwise, but for non-empty directories one of the above methods should be used- at which point you can switch to GitHub Desktop. 
+While GitHub Desktop is an excellent git interface and is certainly the most polished of those presented here. However, its behavior makes it unsuitable for initalizing repositories in non-empty directories. It can be done, but this method is not recommended and could result in data loss. Using GitHub Deskop is recommended otherwise, but for non-empty directories one of the above methods should be used- at which point you can switch to GitHub Desktop. 
 
 Another work-around would be to initialize a new, empty directory, then copy your files into the new directory.
 - After installing GitHub Desktop, click 'Create new repository'
@@ -141,7 +141,9 @@ Once the repository is added it is quite similar to the other GUIs, however it i
 - Push the changes to GitHub via the push button at the top right
 
 
-## Helpful Resources
+## Other Helpful Resources
 [A quick list of common git bash commands](https://www.atlassian.com/git/tutorials/atlassian-git-cheatsheet)
 
 [Git bash initialization walkthrough](https://docs.github.com/en/github/importing-your-projects-to-github/adding-an-existing-project-to-github-using-the-command-line)
+
+[Cheat sheet for GitHub's markdown language](https://guides.github.com/pdfs/markdown-cheatsheet-online.pdf)
